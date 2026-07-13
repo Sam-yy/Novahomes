@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Sole | Corporate Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0d1b2a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#2ec4b6;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("novasole-building.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-content h1{
+    font-size:80px;
+    margin-bottom:20px;
+}
+
+.hero-content h2{
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#2ec4b6;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Sections */
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:40px;
+    color:#0d1b2a;
+}
+
+/* About */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* Cards */
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* Process */
+
+.process{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.step{
+    background:#2ec4b6;
+    color:white;
+    padding:15px 20px;
+    border-radius:30px;
+}
+
+/* Stats */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    padding:30px;
+    background:#0d1b2a;
+    color:white;
+    border-radius:10px;
+}
+
+.stat h3{
+    font-size:40px;
+}
+
+/* Careers */
+
+.job{
+    background:#f5f5f5;
+    padding:20px;
+    border-left:5px solid #2ec4b6;
+    margin-bottom:15px;
+}
+
+/* Contact */
+
+.contact{
+    background:#0d1b2a;
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    color:white;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    padding:20px;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.stats{
+    grid-template-columns:1fr 1fr;
+}
+
+.hero-content h1{
+    font-size:50px;
+}
+
+.hero-content h2{
+    font-size:24px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <div class="logo">NOVA SOLE</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#business">Business</a></li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<p>GLOBAL FOOTWEAR & FASHION COMPANY</p>
+
+<h1>NOVA SOLE</h1>
+
+<h2>Born in Asia, Made for the World</h2>
+
+<p>
+Creating sustainable and innovative footwear solutions
+for the global market through quality, innovation,
+and environmental responsibility.
+</p>
+
+<a href="#about" class="btn">Learn More</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="section-title">
+<h2>About Nova Sole</h2>
+</div>
+
+<div class="about">
+
+<div>
+
+<p>
+Nova Sole is a modern fashion and footwear company
+specializing in innovative product development,
+sustainable sourcing, manufacturing excellence,
+and global distribution.
+
+Our mission is to create footwear that combines
+comfort, style, performance, and sustainability.
+</p>
+
+</div>
+
+<div>
+<img src="company.jpg">
+</div>
+
+</div>
+
+</section>
+
+<!-- MISSION -->
+
+<section id="mission">
+
+<div class="section-title">
+<h2>Mission & Vision</h2>
+</div>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Mission</h3>
+
+<p>
+To provide stylish, comfortable,
+and sustainable footwear that empowers people
+to walk confidently toward their goals.
+</p>
+
+</div>
+
+<div class="card">
+<h3>Vision</h3>
+
+<p>
+To become a globally recognized footwear brand
+trusted for innovation, sustainability,
+and customer satisfaction.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BUSINESS -->
+
+<section id="business">
+
+<div class="section-title">
+<h2>Business Overview</h2>
+</div>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Footwear Development</h3>
+</div>
+
+<div class="card">
+<h3>Manufacturing</h3>
+</div>
+
+<div class="card">
+<h3>Global Distribution</h3>
+</div>
+
+<div class="card">
+<h3>Marketing & Branding</h3>
+</div>
+
+<div class="card">
+<h3>Sustainable Solutions</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROCESS -->
+
+<section>
+
+<div class="section-title">
+<h2>Business Process</h2>
+</div>
+
+<div class="process">
+
+<div class="step">Market Research</div>
+<div class="step">Design</div>
+<div class="step">Sourcing</div>
+<div class="step">Manufacturing</div>
+<div class="step">Marketing</div>
+<div class="step">Sales</div>
+<div class="step">Customer Feedback</div>
+<div class="step">Continuous Improvement</div>
+
+</div>
+
+</section>
+
+<!-- DEPARTMENTS -->
+
+<section id="departments">
+
+<div class="section-title">
+<h2>Departments</h2>
+</div>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Design Department</h3>
+<p>Innovative footwear concepts and product development.</p>
+</div>
+
+<div class="card">
+<h3>Raw Materials Department</h3>
+<p>Quality sourcing and sustainable materials.</p>
+</div>
+
+<div class="card">
+<h3>Marketing Department</h3>
+<p>Market research and customer engagement.</p>
+</div>
+
+<div class="card">
+<h3>Advertising Department</h3>
+<p>Brand promotion and media strategy.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section>
+
+<div class="section-title">
+<h2>Our Goals</h2>
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h3>700+</h3>
+<p>Design Concepts</p>
+</div>
+
+<div class="stat">
+<h3>10+</h3>
+<p>Countries</p>
+</div>
+
+<div class="stat">
+<h3>1000+</h3>
+<p>Future Customers</p>
+</div>
+
+<div class="stat">
+<h3>100%</h3>
+<p>Sustainability Commitment</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CAREERS -->
+
+<section id="careers">
+
+<div class="section-title">
+<h2>Recruitment (採用情報)</h2>
+</div>
+
+<div class="job">
+<h3>Product Designer</h3>
+<p>Create innovative footwear concepts.</p>
+</div>
+
+<div class="job">
+<h3>Marketing Specialist</h3>
+<p>Develop marketing campaigns and market analysis.</p>
+</div>
+
+<div class="job">
+<h3>Sales Representative</h3>
+<p>Build customer relationships and partnerships.</p>
+</div>
+
+<div class="job">
+<h3>Supply Chain Coordinator</h3>
+<p>Manage sourcing and logistics operations.</p>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<br>
+
+<p>Email: contact@novasole.com</p>
+
+<p>Website: www.novasole.com</p>
+
+<p>Kyoto, Japan</p>
+
+</section>
+
+<footer>
+© 2026 Nova Sole. All Rights Reserved.
+</footer>
+
+</body>
+</html>
